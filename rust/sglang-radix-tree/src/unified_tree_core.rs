@@ -2228,6 +2228,7 @@ impl<K: ChildKeyType> UnifiedTreeCore<K> {
                         dup_start as i64,
                         swa_already_freed as i64,
                     )],
+                    tree_owned: false,
                 }));
             }
             if swa_already_freed < dup_len {
